@@ -1,0 +1,920 @@
+body {
+  font-weight: bold;
+}
+
+.line {
+  border-bottom: 1px solid #ae9fb5;
+  padding-bottom: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 22px;
+  position: relative;
+  z-index: 0;
+}
+.stepText1 {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #ae9fb5;
+}
+.stepText2 {
+  text-align: left;
+  margin-top: -17px;
+  margin-left: 170px;
+  color: #ae9fb5;
+}
+.stepText3 {
+  text-align: center;
+  margin-top: -17px;
+  color: #ae9fb5;
+}
+.stepText4 {
+  text-align: right;
+  margin-left: -170px;
+  margin-top: -17px;
+  color: #ae9fb5;
+}
+.stepText5 {
+  text-align: right;
+  margin-top: -17px;
+  margin-left: -40px;
+  color: #ae9fb5;
+}
+
+.step {
+  z-index: 1;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ae9fb5;
+  color: #ae9fb5;
+  background: white;
+  border-radius: 100px;
+  transition: 0.4s;
+}
+.step1 {
+  margin-left: 50px;
+  margin-top: -14px;
+  float: left;
+}
+.step2 {
+  margin-top: -30px;
+  float: left;
+  margin-left: 180px;
+}
+.step3 {
+  margin: 0 auto;
+  margin-top: -30px;
+}
+.step4 {
+  float: right;
+  margin-top: -30px;
+  margin-right: 180px;
+}
+.step5 {
+  float: right;
+  margin-right: 50px;
+  margin-top: -30px;
+}
+
+.active {
+  padding-left: -3px;
+  background: #9b0b9b;
+  color: #fff;
+}
+.activeText {
+  color: rgb(0, 0, 0);
+}
+
+.checked {
+  background: #9b0b9b;
+  color: #fff;
+  padding: 8px;
+}
+
+.disabled {
+  background: #d0d0d2;
+  color: #686869;
+}
+
+#prev,
+#next {
+  background: #540275;
+  color: #fff;
+  padding: 10px 0;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  line-height: 19px;
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+}
+#prev:hover,
+#next:hover {
+  background: #9b0b9b;
+}
+
+@media (max-width: 1920px) {
+  .line {
+    width: 88%;
+  }
+  .stepText1 {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #ae9fb5;
+  }
+  .stepText2 {
+    font-size: 12px;
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 240px;
+    color: #ae9fb5;
+  }
+  .stepText3 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+    color: #ae9fb5;
+  }
+  .stepText4 {
+    font-size: 12px;
+    text-align: right;
+    margin-left: -240px;
+    margin-top: -15px;
+    color: #ae9fb5;
+  }
+  .stepText5 {
+    font-size: 12px;
+    text-align: right;
+    margin-top: -15px;
+    margin-left: -40px;
+    color: #ae9fb5;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 250px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 250px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+
+  .resp {
+    width: 38% !important ;
+    margin-left: 95px !important;
+  }
+
+  #prev,
+  #next {
+    font-size: 14px;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+}
+
+@media (max-width: 1366px) {
+  .line {
+    width: 81%;
+  }
+  .stepText1 {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #ae9fb5;
+  }
+  .stepText2 {
+    font-size: 12px;
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 170px;
+    color: #ae9fb5;
+  }
+  .stepText3 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+    color: #ae9fb5;
+  }
+  .stepText4 {
+    font-size: 12px;
+    text-align: right;
+    margin-left: -170px;
+    margin-top: -15px;
+    color: #ae9fb5;
+  }
+  .stepText5 {
+    font-size: 12px;
+    text-align: right;
+    margin-top: -15px;
+    margin-left: -40px;
+    color: #ae9fb5;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 180px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 180px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+
+  .resp {
+    width: 98% !important ;
+    margin-left: 5px !important;
+  }
+
+  #prev,
+  #next {
+    font-size: 14px;
+    width: 40%;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .line {
+    width: 78%;
+  }
+  .stepText1 {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #ae9fb5;
+  }
+  .stepText2 {
+    font-size: 12px;
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 130px;
+    color: #ae9fb5;
+  }
+  .stepText3 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+    color: #ae9fb5;
+  }
+  .stepText4 {
+    font-size: 12px;
+    text-align: right;
+    margin-left: -130px;
+    margin-top: -15px;
+    color: #ae9fb5;
+  }
+  .stepText5 {
+    font-size: 12px;
+    text-align: right;
+    margin-top: -15px;
+    margin-left: -40px;
+    color: #ae9fb5;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 140px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 140px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+
+  #prev,
+  #next {
+    font-size: 10px;
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .line {
+    width: 67%;
+  }
+  .stepText1 {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #ae9fb5;
+  }
+  .stepText2 {
+    font-size: 10px;
+    text-align: left;
+    margin-top: -13px;
+    margin-left: 120px;
+    color: #ae9fb5;
+  }
+  .stepText3 {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -13px;
+    color: #ae9fb5;
+  }
+  .stepText4 {
+    font-size: 10px;
+    text-align: right;
+    margin-left: -120px;
+    margin-top: -13px;
+    color: #ae9fb5;
+  }
+  .stepText5 {
+    font-size: 10px;
+    text-align: right;
+    margin-top: -13px;
+    margin-left: -40px;
+    color: #ae9fb5;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 130px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 130px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 922px) {
+  .line {
+    width: 67%;
+  }
+  .stepText1 {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #ae9fb5;
+  }
+  .stepText2 {
+    font-size: 10px;
+    text-align: left;
+    margin-top: -13px;
+    margin-left: 100px;
+    color: #ae9fb5;
+  }
+  .stepText3 {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -13px;
+    color: #ae9fb5;
+  }
+  .stepText4 {
+    font-size: 10px;
+    text-align: right;
+    margin-left: -100px;
+    margin-top: -13px;
+    color: #ae9fb5;
+  }
+  .stepText5 {
+    font-size: 10px;
+    text-align: right;
+    margin-top: -13px;
+    margin-left: -40px;
+    color: #ae9fb5;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 110px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 110px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+
+  .resp {
+    width: 80% !important ;
+    margin-left: -20px !important;
+  }
+
+  #prev,
+  #next {
+    font-size: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .line {
+    width: 60%;
+    display: none;
+  }
+  .stepText1 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: #ae9fb5;
+    display: none;
+  }
+  .stepText2 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: -12px;
+    margin-left: 95px;
+    color: #ae9fb5;
+    display: none;
+  }
+  .stepText3 {
+    font-size: 9px;
+    text-align: center;
+    margin-top: -12px;
+    color: #ae9fb5;
+    display: none;
+  }
+  .stepText4 {
+    font-size: 9px;
+    text-align: right;
+    margin-left: -95px;
+    margin-top: -12px;
+    color: #ae9fb5;
+    display: none;
+  }
+  .stepText5 {
+    font-size: 9px;
+    text-align: right;
+    margin-top: -12px;
+    margin-left: -50px;
+    color: #ae9fb5;
+    display: none;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 95px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 95px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  #prev,
+  #next {
+    font-size: 9px;
+    width: 80px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .line {
+    width: 60%;
+  }
+  .stepText1 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: #ae9fb5;
+  }
+  .stepText2 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: -12px;
+    margin-left: 95px;
+    color: #ae9fb5;
+  }
+  .stepText3 {
+    font-size: 9px;
+    text-align: center;
+    margin-top: -12px;
+    color: #ae9fb5;
+  }
+  .stepText4 {
+    font-size: 9px;
+    text-align: right;
+    margin-left: -95px;
+    margin-top: -12px;
+    color: #ae9fb5;
+  }
+  .stepText5 {
+    font-size: 9px;
+    text-align: right;
+    margin-top: -12px;
+    margin-left: -50px;
+    color: #ae9fb5;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+  .step1 {
+    margin-left: 50px;
+    margin-top: -14px;
+    float: left;
+  }
+  .step2 {
+    margin-top: -30px;
+    float: left;
+    margin-left: 95px;
+  }
+  .step3 {
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .step4 {
+    float: right;
+    margin-top: -30px;
+    margin-right: 95px;
+  }
+  .step5 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -30px;
+  }
+
+  #prev,
+  #next {
+    font-size: 9px;
+    width: 80px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .column-fix {
+    height: 300px;
+    width: 60px;
+    position: fixed;
+    left: 10px;
+    top: 55px;
+  }
+
+  .line {
+    display: none;
+  }
+  .stepText1 {
+    font-size: 9px;
+    text-align: center;
+    margin-top: -218px;
+    margin-left: -3px;
+    color: #ae9fb5;
+    display: block;
+  }
+  .stepText2 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: -165px;
+    margin-left: 10px;
+    color: #ae9fb5;
+    display: block;
+  }
+  .stepText3 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: -115px;
+    margin-left: 12px;
+    color: #ae9fb5;
+    display: block;
+  }
+  .stepText4 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: -65px;
+    margin-left: 10px;
+    color: #ae9fb5;
+    display: block;
+  }
+  .stepText5 {
+    font-size: 9px;
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 10px;
+    color: #ae9fb5;
+    display: block;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+  .step1 {
+    margin: 12px;
+    margin-top: 40px;
+    display: block;
+  }
+  .step2 {
+    margin: 12px;
+    margin-top: 9px;
+    display: block;
+  }
+  .step3 {
+    margin: 12px;
+    margin-top: 8px;
+    display: block;
+  }
+  .step4 {
+    margin: 18px;
+    margin-top: 8px;
+    display: block;
+  }
+  .step5 {
+    margin: 18px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .resp {
+    width: 150px !important ;
+    margin-left: -77px !important;
+  }
+
+  #prev,
+  #next {
+    font-size: 14px;
+    width: 247%;
+    text-align: center;
+    margin: -138%;
+    margin-bottom: 20px;
+  }
+  #prev:hover,
+  #next:hover {
+    background: #9b0b9b;
+  }
+
+  .active {
+    background: #9b0b9b;
+    color: #fff;
+    display: block;
+  }
+  .activeText {
+    color: rgb(0, 0, 0);
+  }
+
+  .disabled {
+    background: #d0d0d2;
+    color: #686869;
+  }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/style.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="card-body card-header">
+		<div class="logo">
+		
+		</div>
+  </div>
+<header>
+
+<form>
+
+<div class="card-body card-center" style="width:77%">
+   <div class="container">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+
+
+<div class="col-sm-11 autoCenter">
+
+
+
+	<div class="col-sm-12">
+		<label class="col-sm-12 col-form-label textCenter">PEDIDO CONFIRMADO</label></div>
+
+		<div class="greenBox">
+			<div class="col-sm-12">
+				<label class="col-sm-12 col-form-label greenText">Seu pedido foi processado com sucesso.</label></div>
+				<br>
+				<div style="opacity:50%">
+				Um e-mail de confirmação foi enviado para <strong><span class="email">seuemail@email.com</span></strong> com todos os detalhes do seu pedido. 
+				Após o pagamento das faturas, entraremos em contato para iniciar a sua implementação.</div>
+
+</div>
+	<div class="spacer"></div>
+
+		<div class="row">
+		
+			<div class="col-sm">
+				<div class="colorBox">
+					<div class="col-sm-12">
+						<label class="col-sm-12 col-form-label textCenter">FATURA MENSAL</label></div>
+						<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Vence em 00/00/2021</span>
+					<div class="col-sm-12">
+						<div class="spacer"></div>
+							<div class="row autoCenter">
+						<div class="col-sm-6">
+							<div class="columnRed">Pendente</div>
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">Plano Enterprise</label></div>
+							<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 799,00</label></i></i></div>
+							<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">3 Usuários Adicionais</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 44,70</label></div>
+								<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+							<hr>
+						<div class="row autoCenter">
+								<div class="col-sm">
+							<label style="opacity:70%" class="col-sm-12 col-form-label textCenter">TOTAL</label></div>
+							<div class="col-sm">
+							<label class="col-sm-12 col-form-label textCenter">R$ 1.798,00</label></div>		
+						</div>	
+						<div class="col-sm-12 ">
+							<div class="spacer"></div>	
+								<div class="row">
+									<div class="col-4 col-sm-4 autoCenter"></div>
+									<div class="col-lg-612col-sm-12 col-md-6 col-7 col-xl-12">
+										<button type="button" class="resp" id="btnResp">PAGAR FATURA</button></div>
+									</div>
+								</div>		
+							</div>																
+						</div>
+					</div>
+				
+			<div class="col-sm">
+				<div class="colorBox">
+					<div class="col-sm-12">
+						<label class="col-sm-12 col-form-label textCenter">FATURA MENSAL</label></div>
+						<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Vence em 00/00/2021</span>
+						<div class="spacer"></div>
+					<div class="col-sm-12">
+							<div class="row autoCenter">
+						<div class="col-sm-6">
+							<div class="columnRed">Pendente</div>
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">Plano Enterprise</label></div>
+							<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 799,00</label></i></i></div>
+							<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">3 Usuários Adicionais</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 44,70</label></div>
+								<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+							<hr>
+						<div class="row autoCenter">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label style="opacity:70%;" class="col-sm-12 col-xs-6 col-form-label textCenter">TOTAL</label></div>
+							<div class="col-sm">
+							<label class="col-sm-12 col-form-label textCenter">R$ 843,70</label></div>
+						</div>		
+						
+						<div class="col-sm-12 "></div>
+								<div class="spacer"></div>
+								<div class="row">
+									<div class="col-4 col-sm-4 autoCenter"></div>
+									<div class="col-lg-612col-sm-12 col-md-6 col-7 col-xl-12">
+										<button type="button" class="resp" id="btnResp">PAGAR FATURA</button></div>
+									</div>
+								</div>		
+							</div>																
+							</div>
+						</div>
+					</div>	
+				</div>		
+	<div class="spacer"></div>	
+</div>
+
+</form>
+
+<footer >
+<div class="container-footer">
+    <div class="card-body card-footer">
+		<div class="copy">
+		</div>
+		<div class="footerStyle">
+			<ul>
+			    <li><i class="icon-youtube"></i></li>
+				<li><i class="icon-instagram"></i></li>
+				<li><i class="icon-facebook2"></i></li>
+	 		</ul>
+		</div>
+    </div>
+</div>
+<footer>
+
+</body>
+
+</html>

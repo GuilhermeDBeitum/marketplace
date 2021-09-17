@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/style.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="card-body card-header">
+		<div class="logo">
+		
+		</div>
+  </div>
+<header>
+
+<form>
+
+<div class="card-body card-center">
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+<div class="col-sm-12">
+	<div class="container">
+
+
+<nav>	
+	<div class="column-fix">
+		<div class="row line"></div>
+			<div class="row row-lg-12 ">
+				<div class="col-xs-4"><div class="step step1 checked"><i class="icon-check"></i></div></div>
+				<div class="col-xs-4"><div class="step step2 active">2</div></div>
+				<div class="col-xs-4"><div class="step step3">3</div></div>  
+				<div class="col-xs-4"><div class="step step4">4</div></div>
+				<div class="col-xs-4"><div class="step step5">5</div></div>  
+			</div> 
+				<div class="row ">
+				<div class="col-xs-4 stepText stepText1 activeText">DADOS</div>
+				<div class="col-xs-4 stepText stepText2 activeText">ACESSO</div>
+				<div class="col-xs-4 stepText stepText3">PLANO</div>
+				<div class="col-xs-4 stepText stepText4">EXTRAS</div>
+				<div class="col-xs-4 stepText stepText5">REVISÃO</div>
+			</div>
+		</div> 
+	</div>	
+</nav>
+
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+<div class="col-sm-8 autoCenter">
+
+	<div class="col-sm-12">
+		<label class="col-sm-12 col-form-label">Configure sua URL de Acesso</label></div>
+	<div class="col-sm-12">
+		<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label"><span>Este será o seu link de acesso exclusivo ao site.</span><p>É recomendado usar o Nome Fantasia da sua empresa.</p></label></div>
+
+</div>
+
+	<div class="spacer"></div>
+
+<div class="col-sm-8 autoCenter">
+		<div class="input-group">
+			<input type="text" class="form-control">
+
+			<span class="input-group-text" id="basic-addon2">.site.app.br</span>
+		</div>
+</div>
+
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+<div class="container">
+		<div class="row">
+			<div class="col-6 col-sm-4 autoCenter"></div>
+			<div class="col-lg-6 col-sm-7 col-md-6 col-4 col-xl-5">
+				<button type="button" class="resp" id="next">AVANÇAR</button></div>
+		</div>
+	</div>
+</div>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+		
+</div>
+
+</form>
+
+<footer >
+	<div class="container-footer">
+		<div class="card-body card-footer">
+			<div class="copy">
+			</div>
+			<div class="footerStyle">
+				<ul>
+					<li><i class="icon-youtube"></i></li>
+					<li><i class="icon-instagram"></i></li>
+					<li><i class="icon-facebook2"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<footer>
+
+
+</body>
+
+</html>

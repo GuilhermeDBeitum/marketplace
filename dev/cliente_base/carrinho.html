@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/base.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+</head>
+
+<body>
+
+<header>
+	<nav>
+		<div class="card-body card-header">
+				<div class="logo" style="margin-left: 120px;">
+				
+				</div>
+
+				<a href="../carrinho.html"><i class="icon-shopping-cart cart menuActive" style="font-size:26px;"></i></a>
+				<div class="topnav" id="myTopnav">
+				<a class="icon hamb" style="color: #ffffff;" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				</a>
+				<a href="./cpainel.html" class="back">MINHA CONTA</a>	
+				<a href="./cplano.html" class="back">ALTERAR MEU PLANO</a>
+				<a href="./tabs/tab_usuario.html" class="back">COMPRAR ADICIONAIS</a>
+				<a href="./login.html" class="hamb back">SAIR</a>					
+			</div>
+		</div>
+	</nav>
+<header>
+
+<form>
+
+<div class="card-body card-center" style="width:77%">
+   <div class="container">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+
+<div class="col-sm-11 autoCenter">
+<h4 class="col-sm-12 ">Pedido #0000 Concluido</h4>
+
+	<div class="spacer"></div>
+
+		<div class="row">
+			<div class="col-sm">
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Confira seus dados</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>Após a confirmação, você não poderá fazer alterações na sua compra.</label></div><br>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Razão Social</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>Nome Nome Nome</label></div>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">CNPJ</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>000.000.000/0001-00</label></div><br>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Email</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>email@email.com.br</label></div><br>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Celular</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>(00) 0 0000-0000</label></div><br>
+				
+		</div>
+		
+			<div class="col-sm">
+				<div class="colorBox">
+					<div class="col-sm-12">
+						<label class="col-sm-12 col-form-label textCenter">FATURA MENSAL</label></div>
+					<div class="col-sm-12">
+							<div class="row autoCenter">
+						<div class="col-sm-6">
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">Plano Enterprise</label></div>
+							<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 799,00</label></i></i></div>
+							<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">3 Usuários Adicionais</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 44,70</label></div>
+								<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+							<hr>
+						<div class="row autoCenter">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label style="opacity:70%;" class="col-sm-12 col-xs-6 col-form-label textCenter">TOTAL</label></div>
+							<div class="col-sm">
+							<label class="col-sm-12 col-form-label textCenter">R$ 843,70</label></div>
+						</div>		
+						<div class="spacer"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label class="col-sm-12 col-form-label textCenter" >ITEMS EXTRAS <i class="icon-info"></i></label></div>
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">Implementação</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 1.499,00</label></i></div>
+								<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">1 Setup de Proposta</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 299,00</label></i></div>
+							<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+							<hr>
+						<div class="row autoCenter">
+								<div class="col-sm">
+							<label style="opacity:70%" class="col-sm-12 col-form-label textCenter">TOTAL</label></div>
+							<div class="col-sm">
+							<label class="col-sm-12 col-form-label textCenter">R$ 1.798,00</label></div>		
+						</div>	
+						<div class="spacer"></div>
+						<div class="col-sm-12 ">
+								<div class="input-group">
+									<div class="input-group">
+									<label class="col-sm-12 col-form-label textCenter autoCenter">CUPOM DE DESCONTO</label></div>
+
+										<input type="text" class="form-control">
+									<button	<span class="input-group-text"><i class="icon-check"></i></span>
+									</div>
+								</div>	
+								<div class="spacer"></div>	
+								<div class="row">
+									<div class="col-4 col-sm-4 autoCenter"></div>
+									<div class="col-lg-6 col-sm-12 col-md-6 col-7 col-xl-12">
+									<a href="./pedido.html"><button type="button" class="resp btnNext">FINALIZAR COMPRA</button></a></div>
+									</div>
+								</div>		
+							</div>																
+							</div>
+						</div>
+					</div>	
+				</div>		
+	<div class="spacer"></div>	
+</div>
+
+</form>
+
+<footer >
+	<div class="container-footer">
+		<div class="card-body card-footer">
+			<div class="copy">
+			</div>
+			<div class="footerStyle">
+				<ul>
+					<li><i class="icon-youtube"></i></li>
+					<li><i class="icon-instagram"></i></li>
+					<li><i class="icon-facebook2"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<footer>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+	   x.className = "topnav";
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+
+</html>

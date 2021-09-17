@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/style.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+	<script src="../assets/js/inputnumber.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="card-body card-header">
+		<div class="logo">
+			
+		</div>
+  </div>
+<header>
+
+<form>
+
+<div class="card-body card-center" style="width:77%">
+   <div class="container">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+
+	<div class="col-sm-12">
+		<nav>
+			<div class="containerStepper">			
+				<div class="column-fix">
+					<div class="row line"></div>
+						<div class="row row-lg-12 ">
+							<div class="col-xs-4"><div class="step step1 checked"><i class="icon-check"></i></div></div>
+							<div class="col-xs-4"><div class="step step2 checked"><i class="icon-check"></i></div></div>
+							<div class="col-xs-4"><div class="step step3 checked"><i class="icon-check"></i></div></div>  
+							<div class="col-xs-4"><div class="step step4 active">4</div></div>
+							<div class="col-xs-4"><div class="step step5">5</div></div>  
+						</div> 
+							<div class="row ">
+							<div class="col-xs-4 stepText stepText1 activeText">DADOS</div>
+							<div class="col-xs-4 stepText stepText2 activeText">ACESSO</div>
+							<div class="col-xs-4 stepText stepText3 activeText">PLANO</div>
+							<div class="col-xs-4 stepText stepText4 activeText">EXTRAS</div>
+							<div class="col-xs-4 stepText stepText5">REVISÃO</div>
+						</div>
+					</div> 
+				</div>	
+			</div>
+		</nav>
+	
+	<div class="spacer"></div>
+	
+<div class="container">
+		
+	<div class="spacer"></div>
+
+
+	<div class="col-sm-12">
+		<div class="container">
+			<div class="col-sm-12">
+						<label class="col-sm-12 col-form-label plans">Projetos Extras</label></div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="card cardPad">
+						<div class="col-sm-8">
+							<div class="col-sm-12">
+								<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Item avulso</span>
+								<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">1 Projeto</p></span>
+							</div>
+							<div class="columnRight">	
+								<div class="card-body">					 
+									<span class="textCash4">R$</span><span class="textCash3">19,90</span><span style=" font-size: 10px;">/mês</span>								
+								</div>	
+							</div>
+						</div>			
+							<div class="col-md-9" style="margin:auto;">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>		
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="card cardPad">
+						<div class="col-sm-8">
+							<div class="col-sm-12">
+								<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Pack</span>
+								<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">20 Projetos</p></span>
+							</div>
+							<div class="columnRight">	
+								<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">89,90</span><span style=" font-size: 10px;">/mês</span>
+								</div>	
+							</div>
+						</div>		
+							<div class="col-md-9" style="margin:auto;">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after2" class="form-control fontFix" type="number" readonly="true" value="0" min="0" />
+										</div>
+									</fieldset>
+								</form>
+							</div>							
+						</div>
+					</div>	
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="card cardPad">
+						<div class="col-sm-8">
+							<div class="col-sm-12">
+								<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Pack</span>
+								<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">150 Projetos</p></span>
+							</div>
+							<div class="columnRight">	
+								<div class="card-body">
+										<span class="textCash4">R$</span><span class="textCash3">139,90</span><span style=" font-size: 10px;">/mês</span>							
+								</div>	
+							</div>
+						</div>		
+							<div class="col-md-9" style="margin:auto;">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after3" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>		
+						</div>
+					</div>			
+				</div>	
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="card cardPad2">
+							<div class="col-sm-8">
+								<div class="col-sm-12">
+									<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Pack</span>
+									<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">500 Projetos</p></span>
+								</div>
+								<div class="columnRight">	
+									<div class="card-body">
+											<span class="textCash4">R$</span><span class="textCash3">189,90</span><span style=" font-size: 10px;">/mês</span>							
+									</div>	
+								</div>
+							</div>		
+								<div class="col-md-9" style="margin:auto;">
+									<form>
+										<fieldset>			
+											<div class="form-group">
+												<input id="after4" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+											</div>	
+										</fieldset>
+									</form>
+								</div>		
+							</div>
+						</div>			
+					</div>	
+				</div>	
+			
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+
+
+<div class="col-sm-12">
+	<div class="container">
+		<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label plans">Reuniões Extras</label></div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Implementação</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Reunião Adicional de Implementação</p></span>
+						<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Videochamada com o implementador da sua conta. Duração: 1h</span>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">159,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after5" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Implementação</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Reunião Adicional de Implementação</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Videochamada com o implementador da sua conta. Duração: 1h</span>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+								<span class="textCash4">R$</span><span class="textCash3">159,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after6" class="form-control fontFix" type="number" readonly="true" value="0" min="0" />
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>	
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Implementação</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Reunião Adicional de Implementação</p></span>
+						<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Videochamada com o implementador da sua conta. Duração: 1h</span>
+						</div>
+						<div class="columnRight2">		
+							<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">159,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after7" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>			
+			</div>
+		</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+
+<div class="col-sm-12">
+	<div class="container">
+		<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label plans">Modelos Pré-Configurados</label></div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Modelos</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Proposta Customizada</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Criação e implementação do modelo</span>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">599,90</span><span style=" font-size: 10px;">/mês</span> 
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after8" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Modelo</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Setup de Proposta</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Implementação do modelo</span>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+								<span class="textCash4">R$</span><span class="textCash3">299,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after9" class="form-control fontFix" type="number" readonly="true" value="0" min="0" />
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>	
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Modelo</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">E-mail Marketing</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Criação e implementação do modelo</span>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">599,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after10" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>			
+			</div>
+		</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+
+<div class="col-sm-12">
+	<div class="container">
+		<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label plans">Cursos</label></div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Curso</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Pré-Vendas Inbound: Como Atender e Qualificar Leads de Campanhas de Marketing Digital</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">SDR Inbound.</span>
+							<p class="col-sm-12 col-form-label textFine2" style="opacity:50%">Valor por usuário.</p>
+						</div>
+						<div class="columnRight2">		
+							<div class="card-body">								
+									<span class="textCash4">R$</span><span class="textCash3">399,90</span><span style=" font-size: 10px;">/mês</span>		 
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after11" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Curso</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Winning Back: Como Reconquistar Clientes Perdidos nas Vendas</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Follow + Tempo + Listas</span>
+							<p class="col-sm-12 col-form-label textFine2" style="opacity:50%">Valor por usuário.</p>
+						</div>
+						<div class="spacer"></div>
+						<div class="spacer"></div>
+						<div class="columnRight2">	
+							<div class="card-body">
+								<span class="textCash4">R$</span><span class="textCash3">399,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after12" class="form-control fontFix" type="number" readonly="true" value="0" min="0" />
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>	
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Curso</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Facebook Ads para Geração de Leads de Energia Solar</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Ofertas, LPs, Ads e Setup</span>
+							<p class="col-sm-12 col-form-label textFine2" style="opacity:50%">Valor por usuário.</p>
+						</div>
+						<div class="spacer"></div>
+						<div class="spacer"></div>
+						<div class="columnRight2">	
+							<div class="card-body">								   
+									<span class="textCash4">R$</span><span class="textCash3">399,90</span><span style=" font-size: 10px;">/mês</span>										 
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after13" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>			
+			</div>
+
+
+	<div class="col-sm-12">	
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Curso</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Como Criar Landing Pages de Alta Conversão no RD Station</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Copy + Design + Diagramação</span>
+							<p class="col-sm-12 col-form-label textFine2" style="opacity:50%">Valor por usuário.</p>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">399,90</span><span style=" font-size: 10px;">/mês</span>		
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after14" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Curso</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Desvendando as Automações e Fluxos de E-mails do RD Station</p></span>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Emails + Automações + Fluxos</span>
+							<p class="col-sm-12 col-form-label textFine2" style="opacity:50%">Valor por usuário.</p>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">
+								<span class="textCash4">R$</span><span class="textCash3">399,90</span><span style=" font-size: 10px;">/mês</span>
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after15" class="form-control fontFix" type="number" readonly="true" value="0" min="0" />
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>	
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="card cardPad">
+					<div class="col-sm-8">
+						<div class="col-sm-12">
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Curso</span>
+							<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Proposta Customizada  do Design ao Setup</p></span><div class="spacer"></div>
+							<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Aprenda a criar suas propostas personalizadas</span><br><br>
+							<p class="col-sm-12 col-form-label textFine2" style="opacity:50%">Valor por usuário.</p>
+						</div>
+						<div class="columnRight2">	
+							<div class="card-body">								
+									<span class="textCash4">R$</span><span class="textCash3">399,90</span><span style=" font-size: 10px;">/mês</span>										
+							</div>	
+						</div>
+					</div>		
+						<div class="container">
+							<div class="col-md-12">
+								<form>
+									<fieldset>			
+										<div class="form-group">
+											<input id="after16" class="form-control fontFix" type="number" readonly="true" value="0" min="0"/>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>		
+					</div>
+				</div>			
+			</div>
+		</div>			
+	</div>
+</div>
+
+		<div class="spacer"></div>
+	
+
+			</div>
+		</div>	
+	</div>				
+			<div class="container">
+				<div class="row">
+					<div class="col-1 sm-1  autoCenter"></div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+				<button type="button" id="next">AVANÇAR</button></div>
+				</div>
+			</div>
+		</div>
+	<div class="spacer"></div>	
+</div>
+
+</form>
+
+	<footer >
+		<div class="container-footer">
+			<div class="card-body card-footer">
+				<div class="copy">
+				</div>
+				<div class="footerStyle">
+					<ul>
+						<li><i class="icon-youtube"></i></li>
+						<li><i class="icon-instagram"></i></li>
+						<li><i class="icon-facebook2"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<footer>
+
+<script>
+$('#after').imputNumbers();
+$('#after2').imputNumbers();
+$('#after3').imputNumbers();
+$('#after4').imputNumbers();
+$('#after5').imputNumbers();
+$('#after6').imputNumbers();
+$('#after7').imputNumbers();
+$('#after8').imputNumbers();
+$('#after9').imputNumbers();
+$('#after10').imputNumbers();
+$('#after11').imputNumbers();
+$('#after12').imputNumbers();
+$('#after13').imputNumbers();
+$('#after14').imputNumbers();
+$('#after15').imputNumbers();
+$('#after16').imputNumbers();
+</script>
+
+</body>
+
+</html>

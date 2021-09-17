@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/style.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+</head>
+
+<body>
+
+
+<div class="cardLogin">
+	<div class="container">
+		<div class="logo" style="margin-left: 120px;"></div>
+		<div class="row">
+			<div class="spacer"></div> 
+				<div class="col-sm-12">
+					<div class="col-sm-12 formLogin">
+						<div class="col-sm-12">
+						<h5><strong><p class="textMobile">Acesso do Cliente</p></strong></h5></div>
+						<div class="spacer"></div>
+						<div class="col-sm-12">
+							<label class="col-sm-12 col-xs-12 col-form-label" style="opacity:70%">E-mail</label></div>
+								<input  type="text" class="form-control formImput"><br>
+						<div class="col-sm-12">
+							<label class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-form-label" style="opacity:70%">Senha</label></div>
+								<input  type="text"  class="form-control formImput" >				
+						<div class="col-sm-12"><br>
+							<label class="col-sm-12 col-xs-12 loginFine">Esqueci minha senha</label></div>						
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  autoCenter"></div>
+											<div class="logo">
+												<a href="./cpainel.html"><button type="button"  id="btnResp">ENTRAR</button></a></div>
+											</div>	
+										</div>	
+									</div>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>			
+</div>
+
+<footer >
+	<div class="container-footer">
+		<div class="card-body card-footer">
+			<div class="copy">
+			</div>
+			<div class="footerStyle">
+				<ul>
+					<li><i class="icon-youtube"></i></li>
+					<li><i class="icon-instagram"></i></li>
+					<li><i class="icon-facebook2"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<footer>
+
+
+</body>
+
+</html>

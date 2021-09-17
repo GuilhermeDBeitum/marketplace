@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/style.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+	<script src="../assets/js/inputnumber.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="card-body card-header">
+		<div class="logo">
+		
+		</div>
+  </div>
+<header>
+
+<form>
+
+<div class="card-body card-center" style="width:77%">
+   <div class="container">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+<nav>
+	<div class="col-sm-12">
+		<div class="containerStepper">
+
+			<div class="column-fix">
+				<div class="row line"></div>
+					<div class="row row-lg-12 ">
+						<div class="col-xs-4"><div class="step step1 checked"><i class="icon-check"></i></div></div>
+						<div class="col-xs-4"><div class="step step2 checked"><i class="icon-check"></i></div></div>
+						<div class="col-xs-4"><div class="step step3 active">3</div></div>  
+						<div class="col-xs-4"><div class="step step4">4</div></div>
+						<div class="col-xs-4"><div class="step step5">5</div></div>  
+					</div> 
+						<div class="row ">
+						<div class="col-xs-4 stepText stepText1 activeText">DADOS</div>
+						<div class="col-xs-4 stepText stepText2 activeText">ACESSO</div>
+						<div class="col-xs-4 stepText stepText3 activeText">PLANO</div>
+						<div class="col-xs-4 stepText stepText4">EXTRAS</div>
+						<div class="col-xs-4 stepText stepText5">REVISÃO</div>
+					</div>
+				</div> 
+			</div>	
+		</div>
+</nav>
+
+	<div class="spacer"></div>
+			<div class="container">
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Escolha o seu Plano:</label></div>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="card  cardPadpl">
+									<div class="col-sm-8">
+											<div class="col-sm-12">
+												<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Plano</span>
+												<label class="col-sm-12 col-form-label"><p class="plans">Basic</p></label>
+											</div>
+									</div>
+									
+									<p class="card-text textFine">O essencial para o <br> seu dia a dia em vendas.</p>
+									
+									<div class="containerSmall">
+										<div class="row">
+											<div class="col-4">
+												<div class="card smallCard">				
+													<strong><p class="card-title">1</p></strong>
+													<p class="clop">Usuário</p>	
+												</div>
+											</div>				
+											<div class="col-4">
+												<div class="card smallCard">
+													<strong><p class="card-title">1</p></strong>
+													<p class="clop">Loja</p>	
+												</div>
+											</div>		
+											<div class="col-4">
+												<div class="card smallCard">
+													<strong><p class="card-title">10</p></strong>
+													<p class="clop">Projetos</p>	
+												</div>
+											</div>
+										</div>
+									</div>
+								<div class="card-body text-center">
+									<span class="textCash1">R$ </span><span class="textCash2">259,00</span><span style="opacity:50%">/mês</span>
+									<p class="card-text infoText"> + 1x de R$ 599,00 <i class="icon-info"></i></p>
+								</div>						
+								<div class="card-body text-center">
+									<a href="#" class="btn btn-primary" style="width:110%; margin-left:-10px"><span style="width:100%; font-size: 12px;">SELECIONAR</span></a>
+								</div>	
+							</div>
+						</div>	
+					
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="card  cardPadpl">
+									<div class="col-sm-8">
+											<div class="col-sm-12">
+												<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Plano</span>
+												<label class="col-sm-12 col-form-label"><p class="plans">Pro</p></label>
+											</div>
+												<div class="columnFix">melhor opção</div>
+									</div>
+									
+									<p class="card-text textFine">O custo-beneficio ideal, <br> para quem prefere autonomia.</p>
+									
+									<div class="containerSmall">
+										<div class="row">
+											<div class="col-4">
+												<div class="card smallCard">								
+													<strong><p class="card-title">5</p></strong>
+													<p class="clop">Usuários</p>								
+												</div>
+											</div>				
+											<div class="col-4">
+												<div class="card smallCard">
+													<strong><p class="card-title">3</p></strong>
+													<p class="clop">Lojas</p>	
+												</div>
+											</div>		
+											<div class="col-4">
+												<div class="card smallCard">
+													<strong><p class="card-title">100</p></strong>
+													<p class="clop">Projetos</p>	
+												</div>
+											</div>
+										</div>
+									</div>
+								<div class="card-body text-center">
+									<span class="textCash1">R$ </span><span class="textCash2">499,00</span><span style="opacity:50%">/mês</span>
+									<p class="card-text infoText" > + 1x de R$ 899,00 <i class="icon-info"></i></p>
+								</div>						
+								<div class="card-body text-center">
+									<a href="#" class="btn btn-primary" style="width:110%; margin-left:-10px"><span style="width:100%; font-size: 12px;">SELECIONAR</span></a>
+								</div>	
+							</div>
+						</div>		
+
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="card  cardPadpl">
+									<div class="col-sm-8 r">
+											<div class="col-sm-12">
+												<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Plano</span>
+												<label class="col-sm-12 col-form-label"><p class="plans">Enterprise</p></label>
+											</div>
+									</div>
+									
+									<p class="card-text textFine">Implementação completa <br> com um consultor dedicado.</p>
+									
+									<div class="containerSmall">
+										<div class="row">
+											<div class="col-4">
+												<div class="card smallCard">								
+													<strong><p class="card-title">10</p></strong>
+													<p class="clop">Usuários</p>										
+												</div>
+											</div>				
+											<div class="col-4">
+												<div class="card smallCard">
+													<strong><p class="card-title">3</p></strong>
+													<p class="clop">Lojas</p>	
+												</div>
+											</div>		
+											<div class="col-4">
+												<div class="card smallCard">
+												<strong><p class="card-title">300</p></strong>
+													<p class="clop">Projetos</p>	
+												</div>
+											</div>
+										</div>
+									</div>
+								<div class="card-body text-center">
+									<span class="textCash1">R$</span><span class="textCash2">799,00</span><span style="opacity:50%">/mês</span>
+									<p class="card-text infoText"> + 1x de R$ 1.499,00 <i class="icon-info"></i></p>
+								</div>						
+								<div class="card-body text-center">
+								<a href="#" class="btn btn-primary" style="width:110%;margin-left:-10px"><span style="width:100%; font-size: 12px;">SELECIONAR</span></a>
+								</div>	
+							</div>
+						</div>	
+					</div>		
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+		<div class="col-sm-12">
+			<div  class="text-center">
+				<label class="col-sm-12 col-form-label">Em dúvida? <span class="plansComp">Compare os planos</span></label></div>
+			</div>
+		</div>
+
+	<div class="spacer"></div>
+
+	<div class="col-sm-8">
+		<div class="container">
+			<div class="col-sm-12">
+						<label class="col-sm-12 col-form-label">Compre adicionais sob medida para a sua empresa:</label></div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="card  cardPadpl">
+						<div class="col-sm-8">
+							<div class="col-sm-12">
+								<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Adicionais</span>
+								<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Usuários</p></span>
+							</div>
+							<div class="columnRight">	
+								<div class="card-body">
+								    <div class="circle">
+										<span class="textCash4">R$</span><span class="textCash3">14,90</span><span style=" font-size: 10px;">/mês</span>
+									</div>
+										<span class="textCash5">R$</span><span class="textCash5">19,90/mês</span>
+								</div>	
+							</div>
+						</div>		
+							<div class="container">
+								<div class="col-md-12">
+									<form>
+										<fieldset>			
+											<div class="form-group">
+												<input id="after" class="form-control" type="number" readonly="true" value="0" min="0"/>
+											</div>	
+										</fieldset>
+									</form>
+								</div>
+							</div>		
+						</div>
+					</div>		
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="card  cardPadpl">
+						<div class="col-sm-8">
+							<div class="col-sm-12">
+								<span class="col-sm-12 col-form-label textFine" style="opacity:50%">Adicionais</span>
+								<span class="col-sm-12 col-form-label" style="font-size:18px;"><p class="users">Usuários</p></span>
+							</div>
+							<div class="columnRight">	
+								<div class="card-body">
+									<span class="textCash4">R$</span><span class="textCash3">19,90</span><span style=" font-size: 10px;">/mês</span>
+								</div>	
+							</div>
+						</div>		
+							<div class="container">
+								<div class="col-md-12">
+									<form>
+										<fieldset>			
+											<div class="form-group">
+												<input id="after2" class="form-control" type="number" readonly="true" value="0" min="0" />
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</div>		
+						</div>
+					</div>		
+				</div>	
+			</div>			
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+		</div>
+	</div>	
+		<div class="container">
+			<div class="row">
+				<div class="col-1 sm-1  autoCenter"></div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+			<button type="button" id="next">AVANÇAR</button></div>
+			</div>
+		</div>
+	<div class="spacer"></div>	
+</div>
+
+</form>
+
+<footer >
+<div class="container-footer">
+    <div class="card-body card-footer">
+		<div class="copy">
+		</div>
+		<div class="footerStyle">
+			<ul>
+			    <li><i class="icon-youtube"></i></li>
+				<li><i class="icon-instagram"></i></li>
+				<li><i class="icon-facebook2"></i></li>
+	 		</ul>
+		</div>
+    </div>
+</div>
+<footer>
+
+<script>
+$('#after').imputNumbers();
+$('#after2').imputNumbers();
+</script>
+
+</body>
+
+</html>

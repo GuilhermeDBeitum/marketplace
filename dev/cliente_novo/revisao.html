@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				.then(function (registration) {
+					console.log('Service Worker Registered');
+				});
+
+			navigator.serviceWorker.ready.then(function (registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Site">
+	<meta name="apple-mobile-web-app-title" content="Site">
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name="msapplication-starturl" content="">
+	<meta name="theme-color" content="#17071e">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='msapplication-TileColor' content='#17071e'>
+	<title>Site</title>
+	<link rel="manifest" href="../manifest.json">
+	<link rel="apple-touch-icon" href="../assets/images/maskable_icon.png">
+	<link rel="icon" type="imagem/ico" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet preload" href="../assets/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet preload" href="../assets/css/style.css" as="style">
+	<link rel="stylesheet" href="../assets/css/stepper.css" as="style">
+	<link rel="stylesheet" href="../assets/css/icomoon.css" as="style">
+	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/stepper.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="card-body card-header">
+		<div class="logo">
+		
+		</div>
+  </div>
+<header>
+
+<form>
+
+<div class="card-body card-center" style="width:77%">
+   <div class="container">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+<nav>
+	<div class="col-sm-12">
+		<div class="containerStepper">
+
+			<div class="column-fix">
+				<div class="row line"></div>
+					<div class="row row-lg-12 ">
+						<div class="col-xs-4"><div class="step step1 checked"><i class="icon-check"></i></div></div>
+						<div class="col-xs-4"><div class="step step2 checked"><i class="icon-check"></i></div></div>
+						<div class="col-xs-4"><div class="step step3 checked"><i class="icon-check"></i></div></div>  
+						<div class="col-xs-4"><div class="step step4 checked"><i class="icon-check"></i></div></div>
+						<div class="col-xs-4"><div class="step step5 active">5</div></div>  
+					</div> 
+						<div class="row ">
+						<div class="col-xs-4 stepText stepText1 activeText">DADOS</div>
+						<div class="col-xs-4 stepText stepText2 activeText">ACESSO</div>
+						<div class="col-xs-4 stepText stepText3 activeText">PLANO</div>
+						<div class="col-xs-4 stepText stepText4 activeText">EXTRAS</div>
+						<div class="col-xs-4 stepText stepText5 activeText">REVISÃO</div>
+					</div>
+				</div> 
+			</div>	
+		</div>
+</nav>
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+
+
+
+<div class="col-sm-11 autoCenter">
+
+
+		<div class="row">
+			<div class="col-sm">
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Confira seus dados</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>Após a confirmação, você não poderá fazer alterações na sua compra.</label></div><br>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Razão Social</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>Nome Nome Nome</label></div>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">CNPJ</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>000.000.000/0001-00</label></div><br>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Email</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>email@email.com.br</label></div><br>
+				<div class="col-sm-12">
+					<label class="col-sm-12 col-form-label">Celular</label></div>
+				<div class="col-sm-12">
+					<label style="opacity:50%" class="col-sm-8 col-xs-8 col-form-label"><span>(00) 0 0000-0000</label></div><br>
+				
+		</div>
+		
+			<div class="col-sm">
+				<div class="colorBox">
+					<div class="col-sm-12">
+						<label class="col-sm-12 col-form-label textCenter">FATURA MENSAL</label></div>
+					<div class="col-sm-12">
+							<div class="row autoCenter">
+						<div class="col-sm-6">
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">Plano Enterprise</label></div>
+							<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+							<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 799,00</label></i></i></div>
+							<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">3 Usuários Adicionais</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 44,70</label></div>
+								<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+							<hr>
+						<div class="row autoCenter">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label style="opacity:70%;" class="col-sm-12 col-xs-6 col-form-label textCenter">TOTAL</label></div>
+							<div class="col-sm">
+							<label class="col-sm-12 col-form-label textCenter">R$ 843,70</label></div>
+						</div>		
+						<div class="spacer"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label class="col-sm-12 col-form-label textCenter" >ITEMS EXTRAS <i class="icon-info"></i></label></div>
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">Implementação</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 1.499,00</label></i></div>
+								<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+						<div class="row autoCenter">
+							<div class="col-sm-6">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">1 Setup de Proposta</label></div>
+								<div class="col-lg-4 col-md-4 col-8 col-xs-2">
+								<label style="opacity:50%" class="col-sm-12 col-xs-12 col-form-label">R$ 299,00</label></i></div>
+							<div class="col-2"><button type="button" class="transparent"><i class="icon-cross2"></i></button></div>
+						</div>	
+							<hr>
+						<div class="row autoCenter">
+								<div class="col-sm">
+							<label style="opacity:70%" class="col-sm-12 col-form-label textCenter">TOTAL</label></div>
+							<div class="col-sm">
+							<label class="col-sm-12 col-form-label textCenter">R$ 1.798,00</label></div>		
+						</div>	
+						<div class="spacer"></div>
+						<div class="col-sm-12 ">
+								<div class="input-group">
+									<div class="input-group">
+									<label class="col-sm-12 col-form-label textCenter autoCenter">CUPOM DE DESCONTO</label></div>
+
+										<input type="text" class="form-control">
+									<button	<span class="input-group-text"><i class="icon-check"></i></span>
+									</div>
+								</div>	
+								<div class="spacer"></div>	
+								<div class="row">
+									<div class="col-4 col-sm-4 autoCenter"></div>
+									<div class="col-lg-6 col-sm-12 col-md-6 col-7 col-xl-12">
+										<button type="button" class="resp" id="next">FINALIZAR COMPRA</button></div>
+									</div>
+								</div>		
+							</div>																
+							</div>
+						</div>
+					</div>	
+				</div>		
+	<div class="spacer"></div>	
+</div>
+
+</form>
+
+<footer >
+<div class="container-footer">
+    <div class="card-body card-footer">
+		<div class="copy">
+		</div>
+		<div class="footerStyle">
+			<ul>
+			    <li><i class="icon-youtube"></i></li>
+				<li><i class="icon-instagram"></i></li>
+				<li><i class="icon-facebook2"></i></li>
+	 		</ul>
+		</div>
+    </div>
+</div>
+<footer>
+
+</body>
+
+</html>
